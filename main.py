@@ -1,23 +1,19 @@
 # Author: Madeline Rodriguez
-# Program Description: This program will determine if two strings 
-# can be mapped one-to-one. For this program I used the definition
-# of a one-to-one function which means every distinctive value of 
-# the first string has to map to a value of the second string but
-# not every value of the second string has to be paired with one of
-# the first. Also a character in the first string cannot map two 
-# different characters.
+# Program Description: This program will determine if two strings can be mapped one-to-one. 
+# For this program I used the definition of a one-to-one function which means every 
+# distinctive value of the first string has to map to a value of the second string but
+# not every value of the second string has to be paired with one of the first. Also a 
+# character in the first string cannot map two different characters.
 
 import sys
 
-# Main function will take in two inputs as arguments and assigns the 
-# inputs as strings. These string will be the arugments of the function 
-# OneToOne.
+# Main function will take in two inputs as arguments and assigns the inputs as strings. 
+# These string will be the arugments of the function OneToOne.
 def main():
     if len(sys.argv) > 2:
         s1 = str((sys.argv[1]))
         s2 = str((sys.argv[2]))
-    # If no arguments or only one input is given an error message
-    # will display
+    # If no arguments or only one input is given an error message will display
     else:
         sys.exit('Error - Invalid input')
 
