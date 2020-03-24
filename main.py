@@ -1,9 +1,7 @@
 # Author: Madeline Rodriguez
 # Program Description: This program will determine if two strings can be mapped one-to-one. 
-# For this program I used the definition of a one-to-one function which means every 
-# distinctive value of the first string has to map to a value of the second string but
-# not every value of the second string has to be paired with one of the first. Also a 
-# character in the first string cannot map two different characters.
+# For there to be a one-to-one character mapping both the first string and second string must
+# be equal. Also a character in the first string cannot map two different characters.
 
 import sys
 
@@ -22,8 +20,8 @@ def main():
 # OneToOne function will evaluate whether there exists a one-to-to
 # character mapping between the two strings. 
 def OneToOne(a, b):
-    #If the length of a is greater than b it cannot be one-to-one
-    if len(a) > len(b):
+    #The lengths of a and b must be equal
+    if len(a) == len(b):
         return False
 
     # This dictionary will keep track of which characters are being 
